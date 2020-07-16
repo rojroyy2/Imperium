@@ -1,0 +1,139 @@
+#adminFunction{
+	width: 90%;
+	margin-top: 20px;
+}
+.adminFunctionButton{
+	background-color: #BF3030;
+	height: 30px;
+	color: #FFFFFF;
+	padding: 10px;
+	width: calc(100% - 20px);
+    -ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+.adminFunctionButton:hover{
+	cursor: pointer;
+}
+.adminFunctionConteiner{
+	border-bottom: 1px solid #FFFFFF;
+}
+.functionArrow{
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	margin-left: 1%;
+	margin-right: 20px;
+	position: relative;
+	transform: rotate(180deg);
+	background-repeat: no-repeat;
+	background-image: url(icon/angle-down-solid.svg);
+}
+.adminFunctionWindow{
+	padding: 10px;
+	width: calc(100% - 24px);
+	background-color: #FFFFFF;
+	border-left: 2px solid #BF3030;
+	border-right: 2px solid #BF3030;
+}
+.adminFunctionStatus{
+	width: 100%;
+	color: #BF3030;
+	font-size: 1.1em;
+	text-decoration: underline;
+	text-align: center;
+	margin: 15px 0px 0px 0px;
+}
+.adminFunctionH1{
+	color: #BF3030;
+	width: 100%;
+	font-size: 1.2em;
+	border-bottom: 2px solid #BF3030;
+	text-align: center;
+	margin: 5px 0px 0px 0px;
+	padding-bottom: 2px;
+}
+table{
+	margin-top: 10px;
+	width: 100%;
+	border: 1px solid #BF3030;
+	border-spacing: 0px;
+}
+.still{
+	width: calc(100% - 5px);
+	border: 2px solid #BF3030;
+	background-color: rgba(191, 48, 48, 0.2);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 3px 0px 3px 0px;
+	color: #BF3030;
+	font-size: 1em;
+	font-weight: bold;
+	transition: all ease 0.7s;
+}
+.still:hover{
+	color: #FFFFFF;
+	background-color: #BF3030;
+	cursor: pointer;
+}
+table > tbody > tr > th{
+	color: #FFFFFF;
+	background-color: #BF3030;
+	border-right: 1px solid #FFFFFF;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 2px 3px 2px 3px;
+}
+table > tbody > tr:hover > td{
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	background-color: #BF3030;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+table > tbody > tr > td{
+	background-color: #FFFFFF;
+	color: #BF3030;
+	border: 1px solid #BF3030;
+	padding: 1px 3px 1px 3px;
+	font-size: 1em;
+	transition: all ease 0.7s;
+}
+.infoH1{
+	color: #BF3030;
+	font-size: 1em;
+}
+.infoContiner{
+	width: 70%;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 2fr;
+	grid-row-gap: 10px;
+	grid-column-gap: 25px;
+}
+.infoContiner > input{
+	width: 100%;
+	font-size: 0.9em;
+}
+.infoContiner > select{
+	font-size: 0.9em;
+}
+.infoContiner > option{
+	font-size: 0.9em;
+}
+
+.functionSearch{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 25px;
+}
+.functionSearch > input{
+	width: 100%;
+}

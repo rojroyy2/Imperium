@@ -1,0 +1,350 @@
+#header{
+	top: 0px;
+	position: absolute;
+	width: 100%;
+	z-index: 7;
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr 1fr;
+	background-color: #7FB3D0;
+	height: 140px;
+	justify-content: center;
+}
+#logo{
+	width: 100%;
+	margin-left: 10px;
+	background-repeat: no-repeat;
+	display: block;
+	background-size: 100% 100%;
+	background-image: url(../styles/image/logo.svg);
+}
+#menu{
+	position: absolute;
+	top: 140px;
+	width: 100%;
+	z-index: 7;	
+	background-color: #BF3030;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+#menu > ul{
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 70%;
+
+}
+#menu > ul > li:hover{
+	cursor: pointer;
+}
+#menu > ul > li{
+	width: 110px;
+	height: 35px;
+	color: #FFFFFF;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	font-size: 0.93em;
+	font-weight: normal;
+}
+#menu > ul > li > a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 0.93em;
+	font-weight: normal;
+}
+#search{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 35px;
+	-ms-align-items: center;
+	align-items: center;
+	width: 25%;
+	justify-content: flex-start;
+}
+#search > input{
+	width: 200px;
+	height: 15px;
+	font-size: 0.9em;
+}
+#searchBut{
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-image: url(image/icon/search-solid.svg);
+}
+#searchBut:hover{
+	cursor: pointer;
+}
+#autorisationStatus{
+	font-size: 0.9em;
+	text-align: center;
+	margin-top: 4px;
+	height: 0.9em;
+	color: #BF3030;
+}
+
+	/*Окно авторизации*/
+
+#autorisationForm{
+	width: 200px;
+	height: 100%;
+	display: grid;
+}
+#autorisationForm > .conteiner{
+	font-size: 1.3em;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+	/*Окно главного администора*/
+
+#userShow{
+	background-color: #E9DAB9;
+	width: 200px;
+	height: 100%;
+	flex-direction: column;
+}
+#userShow > .conteiner > a{
+	color: #BF3030;
+	text-decoration: none;
+	font-size: 1em;
+}
+#userShow > .conteiner{
+	color: #BF3030;
+	font-size: 1em;
+}
+
+	/*Выды спорта*/
+
+#sportViews{
+	transition: all ease 0.5s;
+	position: absolute;
+	z-index: 6;
+	width: 100%;
+	background: #BF3030;
+	padding: 10px 0px 10px 0px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+#sportViews > div{
+	width: 65%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+#sportViews > div > a{
+	color: #FFFFFF;
+	font-size: 0.9em;
+	margin: 3px 0px 3px 0px;
+}
+
+	/*Регистрация*/
+
+#registerConteiner{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(6, 6, 6, 0.3);
+	z-index: 15;
+	transition: opacity ease 0.5s;
+}
+#registerClose{
+	background-image: url(icon/close.svg);
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 3px;
+	top: 3px;
+}
+#registerClose:hover{
+	cursor: pointer;
+}
+#registerform{
+	padding: 0px 10px 0px 10px;
+	position: relative;
+	width: 500px;
+	box-shadow: 0px 0px 600px 70px;
+	background-color: #FBFBFB;
+	border-radius: 3px;
+}
+#registerform > h1{
+	font-size: 1.4em;
+	color: #BF3030;
+	margin: 5px 0px 5px 0px;
+	width: 100%;
+}
+#registerButton{
+	background-color: #7FB3D0;
+	color: #FFFFFF;
+	margin: 10px;
+	border-radius: 3px;
+	width: 200px;
+	height: 30px;
+	font-size: 0.9em;
+}
+#registerButton:hover{
+	cursor: pointer;
+	background-color: #BF3030;
+	transition: all ease 0.5s;
+}
+.registerDataFormConteiner{
+	width: 250px;
+}
+.registerDataFormConteiner > h1{
+	color: #BF3030;
+	font-size: 0.9em;
+	margin: 0px;
+}
+.registerDataFormConteiner > input{
+	width: 90%;
+	border-radius: 3px;
+	padding: 3px;
+	font-size: 0.8em;
+	margin: 5px 0px 5px 0px;
+	color: #7FB3D0;
+	font-weight: bold;
+	border: 2px solid #7FB3D0;
+}
+#registerStatus{
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	margin: 5px 0px 0px 0px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+	
+	/*Адаптивность*/
+
+@media (max-width: 640px){
+
+	/*Регистрация*/
+
+	#registerform{
+		padding-top: 8px 0px 0px 0px;
+	}
+	.registerDataFormConteiner{
+		width: 500px;
+		margin-bottom: 5px;
+	}
+	.registerDataFormConteiner > h1{
+		font-size: 1em;
+	}
+	.registerDataFormConteiner > input{
+		font-size: 1em;
+	}
+	#registerButton{
+		font-size: 1.2em;
+		width: 300px;
+		height: 45px;
+		background-color: #BF3030;
+		margin-bottom: 15px;
+	}
+
+	/*Виды спорта*/
+
+	#sportViews > div{
+		width: 100%;
+		grid-template-columns: repeat(4, 3fr);
+	}
+	#sportViews > div > a{
+		margin: 2px 5px 2px 5px;
+	}
+
+	/*Меню*/
+
+	#menu{
+		flex-direction: column-reverse;
+		background-color: #BF3030;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	#menu > ul{
+		width: 100%;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#menu > ul > li{
+		width: 100%;
+		font-size: 1.2em;
+	}
+	#search{
+		width: 100%;
+		justify-content: center;
+	}
+	#search > input{
+		width: 60%;
+		font-size: 1.2em;
+	}
+}
+@media (max-width: 720px) and (min-width: 640px){
+	
+	/*Меню*/
+
+	#menu{
+		flex-direction: column-reverse;
+		background-color: #BF3030;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	#menu > ul{
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	#menu > ul > li{
+		width: 200px;
+		font-size: 1.2em;
+	}
+
+	/*Поиск*/
+
+	#search{
+		width: 100%;
+		justify-content: center;
+	}
+	#search > input{
+		width: 40%;
+		font-size: 1.2em;
+	}
+}

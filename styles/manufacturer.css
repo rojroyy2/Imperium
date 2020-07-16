@@ -1,0 +1,27 @@
+body{
+	padding-top: 170px;
+}
+#manufacturerConteiner{
+	width: calc(90% - 4px);
+	margin-top: 20px;
+	background-color: #FFFFFF;
+	border: 2px solid #BF3030;
+	min-height: 600px;
+}
+#manufacturerConteiner > img{
+	height: 200px;
+	background-color: #C7C7C7;
+	padding: 10px;
+}
+#manufacturerConteiner > h1{
+	color: #BF3030;
+	font-size: 1.8em;
+	width: 100%;
+	text-align: center;
+}
+#manufacturerConteiner > p{
+	width: 100%;
+	color: #BF3030;
+	font-size: 1.1em;
+	text-align: center;
+}

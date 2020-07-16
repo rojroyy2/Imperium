@@ -1,0 +1,106 @@
+body{
+	padding-top: 180px;
+	padding-bottom: 20px;
+}
+.adminFunctionButton{
+	border-bottom: 1px solid #FFFFFF;
+}
+.adminFunctionConteiner{
+	border-top: 2px solid #BF3030;
+	border-bottom: 2px solid #BF3030;
+}
+.tovarSearchConteiner{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	margin-top: 10px;
+}
+input{
+	border: 1px solid #BF3030;
+}
+.newTovarSearchConteiner{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	margin-top: 10px;
+}
+.newPartiTovarInfo{
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #BF3030;
+	padding-bottom: 10px;
+}
+.newPartiTovarInfo > div{
+	margin: auto;
+}
+#newPartiInfoConteiner{
+	width: 100%;
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	margin-top: 10px;
+	border-bottom: 2px solid #BF3030;
+	padding-bottom: 10px;
+}
+#newPartiInfoConteiner > .conteiner{
+	display: grid;
+	grid-template-columns: 1fr 1.3fr;
+}
+#newPartiInfoConteiner > div{
+	color: #BF3030;
+}
+#ordersConteiner, #workerConteiner{
+	grid-column-gap: 20px;
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#workerDateInterval{
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-template-rows: 20px;
+	width: 60%;
+}
+#workerDateInterval > .conteiner{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 0.6fr;
+}
+#workerDateInterval > .conteiner > div{
+	color: #BF3030;
+}
+#newDayConteiner{
+	margin-top: 10px;
+	width: 80%;
+	display: grid;
+
+	grid-template-columns: 0.7fr 0.5fr 1fr 0.5fr 1fr;
+}
+#newDayConteiner > div{
+	color: #BF3030;
+}
+#tovarOffsConteiner{
+	display: grid;
+	margin-top: 15px;
+	grid-column-gap: 20px;
+	grid-template-columns: 120px 2.5fr 60px 1fr 120px 120px;
+	width: 95%;
+}
+#tovarOffsConteiner > input{
+	width: 100%;
+}
+.infoText{
+	color: #BF3030;
+}

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+body, html{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-size: 100%;
+	background-image: url('image/background_index.svg');
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+	background-position: center;
+}
+.fw{
+	flex-wrap: wrap;
+}
+.df{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.js{
+	justify-content: flex-start;
+}
+.je{
+	justify-content: flex-end;
+}
+.jc{
+	justify-content: center;
+}
+.aic{
+	-ms-align-items: center;
+	align-items: center;
+}
+.ais{
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+}
+.aie{
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+}
+.mt10{
+	margin-top: 10px;
+}
+.ml10{
+	margin-left: 10px;
+}
+.mb10{
+	margin-bottom: 10px;
+}
+.mr10{
+	margin-right: 10px;
+}
+.ma{
+	margin: auto;
+}
+.pt10{
+	padding-top: 10px;
+}
+.w100{
+	width: 100%;
+}
+.w120{
+	width: 120px;
+}
+.w90{
+	width: 90px;
+}
+.w220{
+	width: 220px;
+}
+.butR{
+	background-color: #BF3030;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 1px 10px 1px 10px;
+	color: #FFFFFF;
+	font-size: 0.8em;
+	border-radius: 3px;
+	user-select: none;
+}
+.butR:hover{
+	cursor: pointer;
+}
+input{
+	font-size: 0.7em;
+	border-radius: 3px;
+	width: 90%;
+	border: 0px;
+	padding: 1px 3px 1px 3px;
+	color: #BF3030;
+}
+select{
+	border: 1px solid #BF3030;
+	width: 100%;
+	padding: 2px 0px 2px 0px;
+	font-size: 0.65em;
+	border-radius: 3px;
+	color: #BF3030;
+}
+textarea{
+	border: 2px solid #BF3030;
+	color: #BF3030;
+	font-size: 1em;
+	resize: none;
+}
+.inputError{
+	border: 2px solid #BF3030;
+	background-color: #FEEFEF;
+	height: calc() - 4px;
+	width: calc() - 4px;
+	font-size: calc() - 4px;
+}
+#footer{
+	width: 100%;
+	left: 0px;
+	margin: 20px 0px 0px 0px;
+	background: #BF3030;
+	padding: 10px 0px 10px 0px;
+}
+#footer > .df{
+	width: 20%;
+	margin: 0px 40% 0px 40%;
+}
+#footer > .df > h1{
+	margin: 0px auto 0px 0px;
+	color: #FFFFFF;
+	font-size: 1.0em;
+	font-weight: normal;
+	text-decoration: underline;
+}
+#footer > .df > a{
+	margin-left: auto;
+	display: block;
+}
+#footer > .df > a > img{
+	width: 50px;
+	height: 50px;
+}
+	/*Адаптивность*/
+
+@media (max-width: 640px){
+
+}
+@media (max-width: 720px) and (min-width: 640px){
+
+}

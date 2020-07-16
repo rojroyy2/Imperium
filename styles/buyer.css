@@ -1,0 +1,72 @@
+body{
+	padding-top: 170px;
+}
+.tovarConteiner{
+	width: 400px;
+	border: 2px solid #BF3030;
+}
+.tovarConteiner > .img{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.tovarConteiner > .img > img{
+	height: 100%;
+}
+.text{
+	text-align: center;
+	font-size: 1em;
+	color: #BF3030;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.tovarName{
+	width: 100%;
+	font-size: 1.3em;
+	display: grid;
+	grid-template-columns: 1fr 25px;
+	grid-column-gap: 10px;
+	margin-right: 10px;
+}
+.tovarName > a{
+	color: #BF3030;
+}
+.tovarBasketDelete{
+	width: 25px;
+	cursor: pointer;
+	height: 25px;
+	background-image: url('../styles/icon/close.svg');
+}
+.basketTovarCount{
+	font-size: 1em;
+	width: 30px;
+	color: #BF3030;
+	margin-left: 5px;
+	border: 1px solid #BF3030;
+}
+.orderInfoConteiner{
+	display: grid;
+	grid-template-columns: 400px 1fr;
+}
+#orders{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 30px;
+}
+#orders > div{
+	color: #BF3030;
+}
+#shop{
+	text-decoration: underline;
+	font-size: 1.3em;
+	cursor: pointer;
+	align-content: center;
+}

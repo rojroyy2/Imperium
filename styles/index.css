@@ -1,0 +1,128 @@
+*{
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+#sliderConteiner{
+	z-index: 5;
+	margin-top: 30px;
+	width: 60%;
+	position: relative;
+	margin-left: 20%;
+}
+@media (max-width: 720px){
+	#sliderConteiner{
+		margin-top: 0px;
+		width: 100%;
+		position: relative;
+		margin-left: 0%;
+	}
+}
+#sliderConteiner::before{
+	content: "";
+	padding-top: 56.25%;
+}
+#slider{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+#slider:hover > #slideIndexConteiner{
+	opacity: 1;
+}
+.sliderButton{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	z-index: 3;
+	width: 15%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.1;
+	transition: 0.5s all ease;
+}
+.sliderButton:hover{
+	cursor: pointer;
+	opacity: 0.6;
+}
+.sliderButton:hover > img{
+	opacity: 1;
+}
+.sliderButton > img{
+	width: 80%;
+	opacity: 0.6;
+}
+#sliderConteinerWindow{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	overflow: hidden;
+}
+#sliderConteinerReletive{
+	position: relative;
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	transition: left ease 1s;
+}
+.slide{
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.slide > a{
+	width: 100%;
+	display: block;
+	height: 100%;
+}
+.slide > a > img{
+	height: 100%;
+	display: block;
+}
+#white{
+	z-index: 1;
+	transition: opacity ease 0.2s;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(6.0, 6.0, 6.0, 0.8);
+	box-shadow: inset 0 0 150px;
+	position: absolute;
+}
+.population{
+	margin: 20px 0px 0px 0px;
+	height: 400px;
+	background-color: rgba(6, 6, 6, 0.6);
+}
+.population > a{
+	display: block;
+	height: 133px;
+	margin: auto;
+	position: relative;
+}
+.population > a > img{
+	height: 100%;
+}
